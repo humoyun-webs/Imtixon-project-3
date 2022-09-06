@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <div class="brand">
+           <h1>Pizza</h1>
+        </div>
+    </header>
+
+   
+        <h1 class="Sarlavha">
+            Pitsa buyurtma qilish
+        </h1>
+    
+
+        <section>
+            <!-- <div class="first_section">
+                <h2>
+                    Noni qanday bolsin?
+                </h2>
+                <select  id="Bread" onchange="GetSelectValue();">
+                    <option value="Yupqa">Yupqa</option>
+                    <option value="Orta">O`rta</option>
+                    <option value="Qalin">Qalin</option>
+                </select>
+            </div> -->
+            <div class="container" style="text-align: center;">
+                <h3>Noni qanday bolsin?</h3>
+                <select id="Bread">
+                    <option disabled hidden selected>Nonni turini kiriting!</option>
+                    <option value="Yupqa">Yupqa</option>
+                    <option value="O`rta">O`rta</option>
+                    <option value="Qalin">Qalin</option>
+                </select>
+              <h3 class="Sarlavha2">Kattaligi?</h3>
+
+            <div class="shapes">
+                <form class="shape">
+                    <input class="shape1" type="radio" value="25" name="size">
+                    <input class="shape2" type="radio" value="30" name="size">
+                    <input class="shape3" type="radio" value="35" name="size">
+                </form>
+            </div>
+
+
+
+             <h3 class="Sarlavha3">Ustiga?</h3>
+            <form method="dialog" name="myform" onsubmit="formController();" class="checkbox">
+                <label><input type="checkbox" value="Pamidor" name="skill">Pamidor</label>
+                <label><input type="checkbox" value="Kurka go`shti" name="skill">Kurka go`shti</label>
+                <label><input type="checkbox" value="Zaytun">Zaytun</label>
+                <label><input name="skill" type="checkbox" value="Tuzlangan bodring">Tuzlangan bodring</label>
+                <label><input name="skill" type="checkbox" value="Qo`ziqorin">Qo`ziqorin</label>
+                <label><input name="skill" type="checkbox" value="Qazi">Qazi</label>
+                <input class="checkboxs" type="submit" name="submit" value="Tanlab bo`lgandan so`ng bosing">
+                
+            </form>
+            
+
+            <h3 class="Sarlavha4">Qoshimchalar?</h3>
+            <form name="myform1" class="checkboxx" onsubmit="formController2()" method="dialog">
+                <label style="margin-right: 200px;"><input type="checkbox" name="skill" value="Pamidor">Pamidor</label>
+                <label><input type="checkbox" name="skill" value="Kurka go`shti">Kurka go`shti</label>
+                
+                <input class="checkboxss" type="submit" name="submit" value="Tanlab bo`lgandan so`ng bosing" >
+                
+            </form>
+           
+            </div>
+
+
+            <div class="hr">
+            </div>
+
+            <div class="popup"  id="popup" >
+                <img src="images/404-tick.png" alt="" width="100px">
+                <h2>Sorovingiz uchun raxmat buyurtmangiz tez orada boradi!</h2>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+
+
+            <div class="results">
+                <h3>Noningiz turi?</h3>
+              <h3 class="result1">-</h3>
+
+              <h3 style="margin-top: 50px;">Kattaligi</h3>
+              <h3 class="result2">-</h3>
+
+              <h3 style="margin-top: 50px;">Ustiga</h3>
+              <h3 class="result3">-</h3>
+
+              <h3 style="margin-top: 50px;">Qoshimcha massaliqlar</h3>
+              <h3 class="result4">-</h3>
+
+              <button class="btn1" type="submit" onclick="openPopup()">Buyurtma berish!</button>
+            </div>
+
+           
+        </section>
+
+
+        <footer>
+          <h1>
+            Pizza
+          </h1>
+        </footer>
+
+           
+</body>
+<script src="script.js"></script>
+</html>
